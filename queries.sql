@@ -83,3 +83,6 @@ COMMIT;
 /* Queries with AGREGATES written to answer the following questions: */
 /*  - Query for: How many animals are there? */
 SELECT COUNT(*) FROM animals;
+
+/*  - Query for: How many animals have never tried to escape?*/
+SELECT COUNT(*) FROM animals WHERE escape_attempts=0;
