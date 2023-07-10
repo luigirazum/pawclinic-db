@@ -79,3 +79,7 @@ UPDATE animals SET weight_kg=weight_kg * -1;
 ROLLBACK TO deleted_born_after_jan012022;
 UPDATE animals SET weight_kg=weight_kg * -1 WHERE weight_kg < 0;
 COMMIT;
+
+/* Queries with AGREGATES written to answer the following questions: */
+/*  - Query for: How many animals are there? */
+SELECT COUNT(*) FROM animals;
