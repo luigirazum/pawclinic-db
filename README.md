@@ -1,114 +1,79 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+<div align="center">
 
-Modify this file to match your project and remove sections that don't apply.
+  <img src="https://www.svgrepo.com/download/397723/paw-prints.svg" alt="logo" width="100" height="auto" />
+  <br/>
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+### Paw Clinic
+is a relational database based on a real-life example which creates the data structure for a vet clinic.
 
-After you're finished please remove all the comments and instructions!
--->
-
-
-<!-- TABLE OF CONTENTS -->
+</div>
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
+- [🐾 Paw Clinic](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
+  - [Setup](#setup)
+  - [Run](#run)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+<div align="center"><hr width="250px"/></div>
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 🐾 Paw Clinic <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+**Paw Clinic** is a relational database based on a real-life example which creates the data structure for a vet clinic. It starts with one table, and step by step, you will create a complete database with data about:
+- animals
+- animals' owners
+- clinic employees
+- visits
 
-**[your_project__name]** is a...
+Apart from building data structure, it challenges you with tasks that require SQL queries to answer specific questions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-### Tech Stack <a name="tech-stack"></a>
+- ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>
+      <a href="https://www.postgresql.org/">
+      <img align="center" width="25px" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
+      PostgreSQL
+      </a>
+    </li>
   </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+- ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+<details>
+  <summary>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+  #### 1️⃣ Create `animals` table.
+  </summary>
+  
+  - Create Database `vet_clinic`.
+  - Add Table `animals`.
+  - Add demo Data to `animals` table.
+  - Use of SQL queries to consult data.
+
+</details>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -117,108 +82,92 @@ After you're finished please remove all the comments and instructions!
 - [Live Demo Link](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+To get a local copy of this project up and running, follow these steps.
 
-To get a local copy up and running, follow these steps.
+- ### Prerequisites
 
-### Prerequisites
+   - In order to run this project locally you need `git` installed. Please got to [Getting Started - Installing Git guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the steps described for your system to install `git`.
+   - Also you must have `PostgreSQL` installed, you can follow the [PostgreSQL Tutorial](https://www.postgresqltutorial.com/) and follow the steps for your computer OS.
 
-In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+- ### Setup
+    Clone this repository to your desired folder:
+    ```sh
+    cd my-folder
+    git clone git@github.com:luigirazum/pawclinic-db.git
+    cd pawclinic-db
+    ```
+- ### Run
+    Start your `PostgreSQL` CLI:
+    ```sh
+    psql postgres
+    ```
+    `PostgreSQL` will show the `prompt`:
+    ```postgresql
+    postgres=#
+    ```
+    Now you can start typing `SQL` sentences. Happy querying!✌️
+- ### Usage
+  This repository includes files with plain SQL that can be used to recreate a database:
+  - Use [schema.sql](./schema.sql) to create all tables.
+    ```sql
+    CREATE DATABASE vet_clinic;
+    ```
+    ```sql
+    CREATE TABLE animals (
+      id INT GENERATED ALWAYS AS IDENTITY,
+      name VARCHAR(50),
+      date_of_birth DATE,
+      escape_attempts INT,
+      neutered BOOLEAN,
+      weight_kg DECIMAL,
+      PRIMARY KEY(id)
+    );
+    ```
+  - Use [data.sql](./data.sql) to populate tables with sample data.
+    ```sql
+    INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
+      VALUES ('Agumon', '02/03/2020', 0, true, 10.23);
+    ```
+  - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
+    ```sql
+    SELECT * from animals WHERE name LIKE '%mon';
+    ```
+    ⚠️ _*Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!*_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author(s) <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👨‍💻 **Luis Zubia**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+<ul>
+  <li>
+      <a href="https://github.com/luigirazum">
+      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      Github: <b>@luigirazum</b>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/LuigiRazum">
+      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="twitter logo" />
+      Twitter: <b>@LuigiRazum</b>
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/in/luiszubia">
+      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      LinkedIn: <b>Luis Zubia</b>
+      </a>
+    </li>
+</ul>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -226,11 +175,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Add more tables to the database.
+- Add sample queries to show how the database works.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,7 +184,7 @@ Example:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, typos, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
@@ -248,9 +194,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, your support giving a ⭐ will be highly appreciated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,13 +202,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+- 🐾 I would like to thank for all those pets that inspired me to name this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+<!-- FAQ (optional)
 
 ## ❓ FAQ <a name="faq"></a>
 
@@ -279,13 +221,11 @@ I would like to thank...
   - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
