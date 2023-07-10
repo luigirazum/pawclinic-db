@@ -7,7 +7,7 @@ INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
   VALUES ('Gabumon', '2018/11/15', 2, true, 8);
 
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
-  VALUES ('Pikachu', '06/07/2021', 1, false, 15.04);
+  VALUES ('Pikachu', '2021/01/07', 1, false, 15.04);
 
 INSERT INTO animals(name, date_of_birth, escape_attempts, neutered, weight_kg)
   VALUES ('Devimon', '05/12/2017', 5, true, 11);
