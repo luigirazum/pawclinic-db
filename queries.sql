@@ -24,3 +24,17 @@ SELECT * FROM animals WHERE name NOT IN ('Gabumon');
 /* - Find all animals with a weight between 10.4kg and 17.3kg */
 /*   (including the animals with the weights that equals precisely 10.4kg or 17.3kg) */
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
+
+
+/* Start query-update-animals milestone */
+/* --------------------------------------- */
+/* Inside a transaction: */
+/*  - Update the `animals` table by setting the `species` column to `unspecified`. */
+/*  - Verify that change was made. */
+/*  - Then roll back the change and, */
+/*  - Verify that the `species` columns went back to the state before the transaction. */
+BEGIN;
+UPDATE animals SET species='unspecified';
+SELECT * FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
