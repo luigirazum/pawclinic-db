@@ -11,3 +11,8 @@ CREATE TABLE animals (
     weight_kg DECIMAL,
     PRIMARY KEY(id)
 );
+
+/* Start query-update-animals milestone */
+/* --------------------------------------- */
+/* Add a column `species` of type `string` to your `animals` table */
+ALTER TABLE animals ADD species VARCHAR(50);
