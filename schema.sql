@@ -56,4 +56,8 @@ ALTER TABLE animals
 ALTER TABLE animals
     ADD COLUMN species_id INT;
 
+/* - Make species_id a foreign key that references id at species table */
+ALTER TABLE animals
+    ADD FOREIGN KEY(species_id) REFERENCES species(id);
+
 /*  - Add column owner_id which is a foreign key referencing the owners table */
