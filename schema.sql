@@ -45,6 +45,9 @@ ALTER TABLE animals
 ALTER TABLE animals
     DROP COLUMN id;
 
+ALTER TABLE animals
+    ADD COLUMN id SERIAL PRIMARY KEY;
+
 /*  - Remove column species */
 /*  - Add column species_id which is a foreign key referencing species table */
 /*  - Add column owner_id which is a foreign key referencing the owners table */
