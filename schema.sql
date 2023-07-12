@@ -53,4 +53,7 @@ ALTER TABLE animals
     DROP COLUMN species;
 
 /*  - Add column species_id which is a foreign key referencing species table */
+ALTER TABLE animals
+    ADD COLUMN species_id INT;
+
 /*  - Add column owner_id which is a foreign key referencing the owners table */
