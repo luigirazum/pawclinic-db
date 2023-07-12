@@ -83,6 +83,28 @@ Apart from building data structure, it challenges you with tasks that require SQ
   - Use aggregate functions and `GROUP BY` to answer analytical questions.
 </details>
 
+<details>
+  <summary>
+  
+  #### 3️⃣ Query multiple tables.
+  </summary>
+
+  - Use primary key & foreign key mechanism for joining tables.
+    - Add new `owners` and `species` tables and,
+    - Add foreign key columns to your existing `animals` table to model one-to-many relationships.
+  - Insert data to `owners` and `species` tables.
+  - Query multiple tables.
+    - Afterward, use `JOIN` to query the data.
+  - Prepare complex queries that answer analytical questions.
+    - What animals belong to Melody Pond?
+    - List of all animals that are pokemon (their type is Pokemon).
+    - List all owners and their animals, remember to include those that don't own any animal.
+    - How many animals are there per species?
+    - List all Digimon owned by Jennifer Orwell.
+    - List all animals owned by Dean Winchester that haven't tried to escape.
+    - Who owns the most animals?
+</details>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO
