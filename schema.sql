@@ -36,3 +36,12 @@ CREATE TABLE species(
     id SERIAL PRIMARY KEY,
     name VARCHAR(50)
 );
+
+/* Modify 'animals' table: */
+/*  - Make sure that id is set as autoincremented PRIMARY KEY */
+ALTER TABLE animals
+    DROP CONSTRAINT animals_pkey;
+
+/*  - Remove column species */
+/*  - Add column species_id which is a foreign key referencing species table */
+/*  - Add column owner_id which is a foreign key referencing the owners table */
