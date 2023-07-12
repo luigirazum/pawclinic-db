@@ -103,3 +103,12 @@ SELECT species, MIN(weight_kg), MAX(weight_kg)
 SELECT species, AVG(escape_attempts) FROM animals
   WHERE date_of_birth BETWEEN '01/01/1990' AND '12/31/2000'
   GROUP BY species;
+
+/* Start queries-with-multiple-tables milestone */
+/* --------------------------------------- */
+/* Queries using 'JOIN' written to answer the following questions: */
+/*  - What animals belong to Melody Pond? */
+SELECT A.name, O.full_name AS owned_by
+  FROM animals A
+    JOIN owners O ON A.owner_id=O.id
+  WHERE O.full_name='Melody Pond';
