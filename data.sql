@@ -73,3 +73,10 @@ UPDATE animals
     FROM owners
     WHERE full_name='Sam Smith')
   WHERE name IN ('Agumon');
+
+/*  - Jennifer Orwell owns Gabumon and Pikachu. */
+UPDATE animals
+  SET owner_id=(SELECT id
+    FROM owners
+    WHERE full_name='Jennifer Orwell')
+  WHERE name IN ('Gabumon', 'Pikachu');
