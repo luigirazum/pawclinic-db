@@ -70,6 +70,18 @@ Apart from building data structure, it challenges you with tasks that require SQ
 
 </details>
 
+<details>
+  <summary>
+  
+  #### 2️⃣ Query and update `animals` table.
+  </summary>
+
+  - Modify `animals` table.
+  - Add more dummy Data to 'animals' table.
+  - Use transactions to update and delete records.
+  - Use `ROLLBACK` and `SAVEPOINT` to restore the database to a previous state.
+  - Use aggregate functions and `GROUP BY` to answer analytical questions.
+</details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
