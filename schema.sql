@@ -42,6 +42,9 @@ CREATE TABLE species(
 ALTER TABLE animals
     DROP CONSTRAINT animals_pkey;
 
+ALTER TABLE animals
+    DROP COLUMN id;
+
 /*  - Remove column species */
 /*  - Add column species_id which is a foreign key referencing species table */
 /*  - Add column owner_id which is a foreign key referencing the owners table */
