@@ -65,3 +65,11 @@ UPDATE animals
     FROM species
     WHERE name='Pokemon')
   WHERE name NOT LIKE '%mon';
+
+/* Modify your inserted animals to include owner information (`owner_id`): */
+/*  - Sam Smith owns Agumon. */
+UPDATE animals
+  SET owner_id=(SELECT id
+    FROM owners
+    WHERE full_name='Sam Smith')
+  WHERE name IN ('Agumon');
