@@ -94,3 +94,10 @@ UPDATE animals
     FROM owners
     WHERE full_name='Melody Pond')
   WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
+
+/*  - Dean Winchester owns Angemon and Boarmon. */
+UPDATE animals
+  SET owner_id=(SELECT id
+    FROM owners
+    WHERE full_name='Dean Winchester')
+  WHERE name IN ('Angemon', 'Boarmon');
