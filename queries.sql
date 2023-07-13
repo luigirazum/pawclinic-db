@@ -213,3 +213,15 @@ SELECT V.visit_date, A.name AS animal_name, A.date_of_birth, A.escape_attempts, 
     JOIN vets E ON E.id=V.vet_id
   ORDER BY V.visit_date DESC
   LIMIT 1;
+
+/*  - How many visits were with a vet that did not specialize in that animal's species? */
+SELECT COUNT(*)
+  FROM visits V
+    JOIN vets E ON E.id=V.vet_id
+    JOIN specializations SP ON SP.vet_id=V.vet_id
+    JOIN species VS ON VS.id=SP.species_id
+    JOIN animals A ON A.id=V.animal_id
+    JOIN species S ON S.id=A.species_id
+  WHERE A.species_id NOT IN (
+    SELECT species_id FROM specializations WHERE vet_id=V.vet_id
+  );
