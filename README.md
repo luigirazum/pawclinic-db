@@ -105,6 +105,30 @@ Apart from building data structure, it challenges you with tasks that require SQ
     - Who owns the most animals?
 </details>
 
+<details>
+  <summary>
+
+   #### 4️⃣ Add many-to-many `JOIN` tables.
+  </summary>
+
+  - Create a table named `vets`.
+  - Create a "join table" called `specializations` to handle a **many-to-many** relationship between the tables `species` and `vets`.
+  - Create a "join table" called `visits` to handle a **many-to-many** relationship between the tables `animals` and `vets`.
+  - Insert data for `vets`.
+  - Insert data for `specialties`.
+  - Insert data for `visits`.
+  - Write more complex queries to use them to answer questions.
+    - Who was the last animal seen by William Tatcher?
+    - How many different animals did Stephanie Mendez see?
+    - List all vets and their specialties, including vets with no specialties.
+    - List all animals that visited Stephanie Mendez between April 1st and August 30th, 2020.
+    - What animal has the most visits to vets?
+    - Who was Maisy Smith's first visit?
+    - Details for most recent visit: animal information, vet information, and date of visit.
+    - How many visits were with a vet that did not specialize in that animal's species?
+    - What specialty should Maisy Smith consider getting? Look for the species she gets the most.
+</details>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO
@@ -209,8 +233,9 @@ To get a local copy of this project up and running, follow these steps.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Add more tables to the database.
+- Add more dummy data to test the database.
 - Add sample queries to show how the database works.
+- Add the Entity Relationship Diagram (ERD).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
