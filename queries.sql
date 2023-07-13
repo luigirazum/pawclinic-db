@@ -163,3 +163,10 @@ SELECT A.name AS animal_name, E.name AS seen_by, V.visit_date AS seen_on
   WHERE E.name='William Tatcher'
   ORDER BY V.visit_date DESC
   LIMIT 1;
+
+/*  - How many different animals did Stephanie Mendez see? */
+SELECT DISTINCT COUNT(V.animal_id)
+  FROM visits V
+    JOIN animals A ON V.animal_id=A.id
+    JOIN vets E ON V.vet_id=E.id
+  WHERE E.name='Stephanie Mendez';
