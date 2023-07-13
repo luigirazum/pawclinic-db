@@ -90,3 +90,17 @@ CREATE TABLE specializations(
     FOREIGN KEY(vet_id) REFERENCES vets(id),
     FOREIGN KEY(species_id) REFERENCES species(id)
 );
+
+/* There is a many-to-many relationship between the tables 'animals' and 'vets':
+/*  - An animal can visit multiple vets, and */
+/*  - One vet can be visited by multiple animals. */
+/*  - Create a "join table" called 'visits' to handle this relationship: */
+/*    * It should also keep track of the date of the visit. */
+CREATE TABLE visits(
+    animal_id INT NOT NULL,
+    vet_id INT NOT NULL,
+    visit_date DATE,
+    PRIMARY KEY(animal_id, vet_id, visit_date),
+    FOREIGN KEY(animal_id) REFERENCES animals(id),
+    FOREIGN KEY(vet_id) REFERENCES vets(id)
+);
