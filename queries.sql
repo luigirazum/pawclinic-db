@@ -225,3 +225,13 @@ SELECT COUNT(*)
   WHERE A.species_id NOT IN (
     SELECT species_id FROM specializations WHERE vet_id=V.vet_id
   );
+
+/*  - What specialty should Maisy Smith consider getting? Look for the species she gets the most. */
+SELECT S.name AS animal_type, COUNT(V.animal_id) AS total_visits
+  FROM visits V
+    JOIN vets E ON E.id=V.vet_id
+    JOIN animals A ON A.id=V.animal_id
+    JOIN species S ON S.id=A.species_id
+  WHERE E.name='Maisy Smith'
+  GROUP BY S.name
+  ORDER BY total_visits DESC;
