@@ -151,3 +151,15 @@ SELECT O.full_name AS owner, COUNT(A.owner_id) AS animals_owned
   GROUP BY O.full_name
   ORDER BY COUNT(A.owner_id) DESC
   LIMIT 1;
+
+/* Start add-join-tables milestone */
+/* --------------------------------------- */
+/* Write queries to answer the following questions: */
+/*  - Who was the last animal seen by William Tatcher? */
+SELECT A.name AS animal_name, E.name AS seen_by, V.visit_date AS seen_on
+  FROM visits V
+    JOIN animals A ON A.id=V.animal_id
+    JOIN vets E ON E.id=V.vet_id
+  WHERE E.name='William Tatcher'
+  ORDER BY V.visit_date DESC
+  LIMIT 1;
