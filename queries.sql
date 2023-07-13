@@ -201,3 +201,15 @@ SELECT A.name AS animal_name, V.visit_date AS visit_on
   WHERE E.name='Maisy Smith'
   ORDER BY V.visit_date ASC
   LIMIT 1;
+
+/*  - Details for most recent visit: animal information, vet information, and date of visit. */
+SELECT V.visit_date, A.name AS animal_name, A.date_of_birth, A.escape_attempts, A.neutered, A.weight_kg,
+  S.name AS species_type, O.full_name AS owner_name, E.name AS vet_name, E.age AS vet_age,
+  E.date_of_graduation
+  FROM visits V
+    JOIN animals A ON A.id=V.animal_id
+    JOIN species S ON S.id=A.species_id
+    JOIN owners O ON O.id=A.owner_id
+    JOIN vets E ON E.id=V.vet_id
+  ORDER BY V.visit_date DESC
+  LIMIT 1;
