@@ -64,3 +64,17 @@ ALTER TABLE animals
 ALTER TABLE animals
     ADD COLUMN owner_id INT,
     ADD FOREIGN KEY(owner_id) REFERENCES owners(id);
+
+/* Start add-join-tables milestone */
+/* --------------------------------------- */
+/* Create a table named 'vets' with the following columns: */
+/*  - id: integer (set it as autoincremented PRIMARY KEY) */
+/*  - name: string */
+/*  - age: integer */
+/*  - date_of_graduation: date. */
+CREATE TABLE vets(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(150),
+    age INT,
+    date_of_graduation DATE
+);
