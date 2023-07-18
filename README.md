@@ -40,6 +40,11 @@ is a relational database based on a real-life example which creates the data str
 
 Apart from building data structure, it challenges you with tasks that require SQL queries to answer specific questions.
 
+- ## 📈 Entity Relationship Diagram <a name="built-with"></a>
+  ERD was made with [**draw**SQL](https://drawsql.app/).
+
+  <img src="drawSQL-vet_clinic-db.svg">
+  
 ## 🛠 Built With <a name="built-with"></a>
 
 - ### Tech Stack <a name="tech-stack"></a>
@@ -49,6 +54,12 @@ Apart from building data structure, it challenges you with tasks that require SQ
       <a href="https://www.postgresql.org/">
       <img align="center" width="25px" src="https://wiki.postgresql.org/images/3/30/PostgreSQL_logo.3colors.120x120.png" alt="postgreSQL logo" />
       PostgreSQL
+      </a>
+    </li>
+    <li>
+      <a href="https://drawsql.app/">
+      <img align="center" width="25px" src="https://first.drawsql.app/assets/images/image01.png?v=53d6933e" alt="postgreSQL logo" />
+      <b>draw</b>SQL
       </a>
     </li>
   </ul>
@@ -127,6 +138,19 @@ Apart from building data structure, it challenges you with tasks that require SQ
     - Details for most recent visit: animal information, vet information, and date of visit.
     - How many visits were with a vet that did not specialize in that animal's species?
     - What specialty should Maisy Smith consider getting? Look for the species she gets the most.
+</details>
+
+<details>
+  <summary>
+  
+  #### 5️⃣ Add ERD (Entity Relationship Diagram).
+  </summary>
+
+  - Create ERD on [**draw**SQL](https://drawsql.app/).
+  - Export the ERD to `png` image.
+  - Convert `png` to `svg` image.
+  - Upload the ERD image to this repo.
+  - Add the ERD image to this `README`.
 </details>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -209,19 +233,19 @@ To get a local copy of this project up and running, follow these steps.
 <ul>
   <li>
       <a href="https://github.com/luigirazum">
-      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
+      <img align="center" width="20px" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg" alt="github logo" />
       Github: <b>@luigirazum</b>
       </a>
     </li>
     <li>
       <a href="https://twitter.com/LuigiRazum">
-      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="twitter logo" />
+      <img align="center" width="20px" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="twitter logo" />
       Twitter: <b>@LuigiRazum</b>
       </a>
     </li>
     <li>
       <a href="https://linkedin.com/in/luiszubia">
-      <img align="center" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
+      <img align="center" width="20px" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="linkedin logo" />
       LinkedIn: <b>Luis Zubia</b>
       </a>
     </li>
